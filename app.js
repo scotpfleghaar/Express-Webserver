@@ -49,9 +49,7 @@ app.post('/subscribe', (req, res) => {
     let email = req.body.email;
     console.log(name + ' has subscribed with ' + email);
 });
-app.get('/subscribe', (req, res) => {
-    res.redirect('/subscribe.html');
-});
+
 
 app.listen(3000, function () {
     console.log('Server started on port 3000...');
